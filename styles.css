@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.worldatlas.com/r/w768-q80/upload/3d/6c/bc/shutterstock-1933590803.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0;
+}
+
+header h1 {
+    font-family: 'Gothic', serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+header button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+header button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.universe-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #000000;
+    margin: 0.5em;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.universe-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #121212;
+    color: #ccc;
+}
+
+body.dark-mode header button {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .universe-button {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode footer {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.universe-button.clicked {
+    transform: scale(1.3);
+    background: rgba(255, 255, 255, 0.7);
+}
